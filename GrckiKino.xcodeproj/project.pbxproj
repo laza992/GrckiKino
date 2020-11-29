@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90024CD42573F30A00F9DFC4 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90024CD32573F30A00F9DFC4 /* Results.storyboard */; };
+		90024CD82573F34200F9DFC4 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90024CD72573F34200F9DFC4 /* ResultsViewController.swift */; };
+		90024CDC2573F35A00F9DFC4 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90024CDB2573F35A00F9DFC4 /* ResultsView.swift */; };
+		90024CDF2573F36400F9DFC4 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90024CDE2573F36400F9DFC4 /* ResultsViewModel.swift */; };
+		90024CE62573FBD900F9DFC4 /* WinningNumbersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90024CE52573FBD900F9DFC4 /* WinningNumbersModel.swift */; };
+		90024CEC2573FEC500F9DFC4 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90024CEA2573FEC500F9DFC4 /* ResultsTableViewCell.swift */; };
+		90024CED2573FEC500F9DFC4 /* ResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90024CEB2573FEC500F9DFC4 /* ResultsTableViewCell.xib */; };
+		903D6133257411B800DEF52E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903D6132257411B800DEF52E /* BaseModel.swift */; };
 		905C7CD92572E228004F06F0 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C7CD82572E228004F06F0 /* MainTabBarViewController.swift */; };
 		905C7CDE2572E2DC004F06F0 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C7CDD2572E2DC004F06F0 /* FlowController.swift */; };
 		905C7CE22572E304004F06F0 /* MainFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C7CE12572E304004F06F0 /* MainFlowController.swift */; };
@@ -61,6 +69,14 @@
 /* Begin PBXFileReference section */
 		35DA01637F17D57C192BA18D /* Pods_GrckiKino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrckiKino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D47557851EA33B4C787845 /* Pods-GrckiKino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrckiKino.release.xcconfig"; path = "Target Support Files/Pods-GrckiKino/Pods-GrckiKino.release.xcconfig"; sourceTree = "<group>"; };
+		90024CD32573F30A00F9DFC4 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		90024CD72573F34200F9DFC4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		90024CDB2573F35A00F9DFC4 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		90024CDE2573F36400F9DFC4 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		90024CE52573FBD900F9DFC4 /* WinningNumbersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningNumbersModel.swift; sourceTree = "<group>"; };
+		90024CEA2573FEC500F9DFC4 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
+		90024CEB2573FEC500F9DFC4 /* ResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsTableViewCell.xib; sourceTree = "<group>"; };
+		903D6132257411B800DEF52E /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		905C7CD82572E228004F06F0 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		905C7CDD2572E2DC004F06F0 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		905C7CE12572E304004F06F0 /* MainFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowController.swift; sourceTree = "<group>"; };
@@ -141,6 +157,25 @@
 				80D47557851EA33B4C787845 /* Pods-GrckiKino.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		90024CD62573F33100F9DFC4 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				90024CD72573F34200F9DFC4 /* ResultsViewController.swift */,
+				90024CDB2573F35A00F9DFC4 /* ResultsView.swift */,
+				90024CDE2573F36400F9DFC4 /* ResultsViewModel.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		90024CE92573FEB000F9DFC4 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				90024CEA2573FEC500F9DFC4 /* ResultsTableViewCell.swift */,
+				90024CEB2573FEC500F9DFC4 /* ResultsTableViewCell.xib */,
+			);
+			path = Results;
 			sourceTree = "<group>";
 		};
 		905C7CD72572E20B004F06F0 /* TabBar */ = {
@@ -335,6 +370,7 @@
 				90EF6D5025724C6500CE58A3 /* LaunchScreen.storyboard */,
 				905C7CFE2572E4F8004F06F0 /* Draw.storyboard */,
 				905C7D012572E516004F06F0 /* Board.storyboard */,
+				90024CD32573F30A00F9DFC4 /* Results.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -342,6 +378,7 @@
 		90EF6D6C2572535300CE58A3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				90024CD62573F33100F9DFC4 /* Results */,
 				905C7CF42572E442004F06F0 /* LiveDraw */,
 				905C7CE92572E3E0004F06F0 /* Board */,
 				905C7CD72572E20B004F06F0 /* TabBar */,
@@ -373,6 +410,7 @@
 		90EF6D712572559D00CE58A3 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				90024CE92573FEB000F9DFC4 /* Results */,
 				90EF6D72257255A800CE58A3 /* UpcomingRounds */,
 			);
 			path = TableViewCells;
@@ -413,6 +451,8 @@
 			isa = PBXGroup;
 			children = (
 				90EF6DC925725F2A00CE58A3 /* DrawingModel.swift */,
+				90024CE52573FBD900F9DFC4 /* WinningNumbersModel.swift */,
+				903D6132257411B800DEF52E /* BaseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -493,7 +533,9 @@
 				90EF6D892572577D00CE58A3 /* Montserrat-Light.ttf in Resources */,
 				905C7D4A2573D454004F06F0 /* CombinationCollectionViewCell.xib in Resources */,
 				905C7D592573E5EE004F06F0 /* DialogView.storyboard in Resources */,
+				90024CED2573FEC500F9DFC4 /* ResultsTableViewCell.xib in Resources */,
 				90EF6D8A2572577D00CE58A3 /* Montserrat-Bold.ttf in Resources */,
+				90024CD42573F30A00F9DFC4 /* Results.storyboard in Resources */,
 				90EF6D6525724D6C00CE58A3 /* Colors.txt in Resources */,
 				90EF6D762572561D00CE58A3 /* UpcomingRoundsTableViewCell.xib in Resources */,
 				905C7D502573D65E004F06F0 /* NumbersCollectionViewCell.xib in Resources */,
@@ -572,19 +614,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				905C7CD92572E228004F06F0 /* MainTabBarViewController.swift in Sources */,
+				90024CDF2573F36400F9DFC4 /* ResultsViewModel.swift in Sources */,
 				905C7D392573CA55004F06F0 /* UITextField.swift in Sources */,
 				905C7D4F2573D65E004F06F0 /* NumbersCollectionViewCell.swift in Sources */,
 				90EF6DB425725C1B00CE58A3 /* UpcomingRoundsViewController.swift in Sources */,
 				90EF6DC325725D7300CE58A3 /* UpcomingRoundsViewModel.swift in Sources */,
+				90024CEC2573FEC500F9DFC4 /* ResultsTableViewCell.swift in Sources */,
 				905C7D642573E91E004F06F0 /* Array.swift in Sources */,
 				90EF6D752572561D00CE58A3 /* UpcomingRoundsTableViewCell.swift in Sources */,
 				905C7CE22572E304004F06F0 /* MainFlowController.swift in Sources */,
 				90EF6DCA25725F2A00CE58A3 /* DrawingModel.swift in Sources */,
 				90EF6DB0257259E300CE58A3 /* Colors.swift in Sources */,
 				905C7D412573CAED004F06F0 /* CustomTextField.swift in Sources */,
+				90024CD82573F34200F9DFC4 /* ResultsViewController.swift in Sources */,
 				90EF6D4625724C6300CE58A3 /* AppDelegate.swift in Sources */,
 				90EF6DCE2572627300CE58A3 /* APIManager.swift in Sources */,
+				903D6133257411B800DEF52E /* BaseModel.swift in Sources */,
 				905C7CE62572E350004F06F0 /* UIWindow.swift in Sources */,
+				90024CDC2573F35A00F9DFC4 /* ResultsView.swift in Sources */,
 				905C7D492573D454004F06F0 /* CombinationCollectionViewCell.swift in Sources */,
 				905C7CEB2572E3F2004F06F0 /* BoardViewController.swift in Sources */,
 				905C7D532573DC94004F06F0 /* MainTabBarViewModel.swift in Sources */,
@@ -593,6 +640,7 @@
 				90EF6D4825724C6300CE58A3 /* SceneDelegate.swift in Sources */,
 				905C7CDE2572E2DC004F06F0 /* FlowController.swift in Sources */,
 				905C7D3D2573CAC5004F06F0 /* TextFieldView.swift in Sources */,
+				90024CE62573FBD900F9DFC4 /* WinningNumbersModel.swift in Sources */,
 				90EF6DAE257259E300CE58A3 /* Fonts.swift in Sources */,
 				905C7D5A2573E5EF004F06F0 /* DialogViewController.swift in Sources */,
 				90EF6D6825724D8200CE58A3 /* Constants.swift in Sources */,

@@ -36,6 +36,11 @@ internal enum StoryboardScene {
 
     internal static let upcomingRoundsViewController = SceneType<GrckiKino.UpcomingRoundsViewController>(storyboard: Main.self, identifier: "UpcomingRoundsViewController")
   }
+  internal enum Results: StoryboardType {
+    internal static let storyboardName = "Results"
+
+    internal static let resultsViewController = SceneType<GrckiKino.ResultsViewController>(storyboard: Results.self, identifier: "ResultsViewController")
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

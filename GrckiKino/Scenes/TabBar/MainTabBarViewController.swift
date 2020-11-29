@@ -38,8 +38,8 @@ class MainTabBarViewController: UITabBarController {
         //liveDrawVC.viewModel = PlacesViewModel()
         liveDrawVC.tabBarItem = UITabBarItem(title: "Izvlačenje uživo", image: Asset.playButton.image, tag: 1)
     
-        let resultsVC = StoryboardScene.Draw.liveDrawViewController.instantiate()
-        //resultsVC.viewModel = PlacesViewModel()
+        let resultsVC = StoryboardScene.Results.resultsViewController.instantiate()
+        resultsVC.viewModel = ResultsViewModel()
         resultsVC.tabBarItem = UITabBarItem(title: "Rezultati izvlačenja", image: Asset.results.image, tag: 2)
     
         viewControllers = [boardVC, liveDrawVC, resultsVC]

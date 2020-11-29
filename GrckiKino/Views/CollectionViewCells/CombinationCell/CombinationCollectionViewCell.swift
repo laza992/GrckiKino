@@ -27,8 +27,9 @@ class CombinationCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Setup Methods
     
-    func setup(combinationsLabel: String) {
-        numberOfCombinationsLabel.text = combinationsLabel
+    func setup(combinations: String, odd: String) {
+        numberOfCombinationsLabel.text = combinations
+        oddsLabel.text = odd
     }
 
 }

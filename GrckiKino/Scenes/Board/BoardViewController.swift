@@ -115,7 +115,7 @@ extension BoardViewController: UICollectionViewDelegate, UICollectionViewDataSou
         switch collectionView {
         case customView.combinationCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CombinationCollectionViewCell.cellID, for: indexPath) as! CombinationCollectionViewCell
-            cell.setup(combinationsLabel: "\(viewModel.getNumberFor(row: indexPath.row))")
+            cell.setup(combinations: "\(viewModel.getNumberFor(row: indexPath.row))", odd: viewModel.getOddFor(indexPath: indexPath))
             return cell
         case customView.numbersCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NumbersCollectionViewCell.cellID, for: indexPath) as! NumbersCollectionViewCell
@@ -157,19 +157,11 @@ extension BoardViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        if collectionView == customView.numbersCollectionView {
-            return 0
-        } else {
-            return 0
-        }
+        return 0
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        if collectionView == customView.numbersCollectionView {
-            return 0
-        } else {
-            return 0
-        }
+        return 0
     }
 
 }

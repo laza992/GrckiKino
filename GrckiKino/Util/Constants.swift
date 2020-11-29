@@ -33,5 +33,9 @@ struct Constants {
     static func getUpcomingDraw(_ drawID: Int) -> URL {
         return URL(string : "https://api.opap.gr/draws/v3.0/1100/\(drawID)")!
     }
+    static func getResultsFor(_ date: String) -> URL {
+        return URL(string : "https://api.opap.gr/draws/v3.0/1100/draw-date/\(date)/\(date)")!
+    }
+    static let oddsArray: [Int] = [20000,10000,7000,5000,2500,1500,1400,1200,1000,800,500,250,200,100,50]
     
 }

@@ -52,4 +52,22 @@ class APIManager {
             }
         }.resume()
     }
+    
+    func downloadResults(date: String, completion: @escaping([DrawingModel]) -> ()) {
+        URLSession.shared.dataTask(with: Constants.getResultsFor(date)) { (data , urlResponse, error) in
+            guard let data = data, error == nil, urlResponse != nil else {
+                print("Error")
+                return
+            }
+            print("Downloaded")
+            do {
+                let decoder = JSONDecoder()
+                let drawingModel = try decoder.decode([String: DrawingModel].self, from: data)
+                completion(drawingModel.compactMap({ $0.value }))
+            } catch {
+                print("Download Error")
+                completion([])
+            }
+        }.resume()
+    }
 }

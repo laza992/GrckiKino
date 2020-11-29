@@ -17,9 +17,7 @@ class DrawingModel: Codable {
     var status: String
     var drawBreak: Int
     var visualDraw: Int
-    //var pricePoints: {},
-    //var prizeCategories: [],
-    //var wagerStatistics: {},
+    var winningNumbers: WinningNumbers?
     
     enum CodingKeys: String, CodingKey {
         case gameId
@@ -28,6 +26,7 @@ class DrawingModel: Codable {
         case status
         case drawBreak
         case visualDraw
+        case winningNumbers
     }
     
     required init(from decoder: Decoder) throws {
@@ -40,5 +39,6 @@ class DrawingModel: Codable {
         status = try container.decode(String.self, forKey: .status)
         visualDraw = try container.decode(Int.self, forKey: .visualDraw)
         drawBreak = try container.decode(Int.self, forKey: .drawBreak)
+        winningNumbers = try container.decodeIfPresent(WinningNumbers.self, forKey: .winningNumbers)
     }
 }

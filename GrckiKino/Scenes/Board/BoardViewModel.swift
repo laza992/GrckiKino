@@ -18,6 +18,9 @@ protocol BoardViewModelProtocol {
     func getNumbersCount() -> Int
     func getNumberFor(row: Int) -> Int
     
+    func getOddsCount() -> Int
+    func getOddFor(indexPath: IndexPath) -> String
+    
     func getSelectionNumbersCount() -> Int
     func getSelectionNumberFor(indexPath: IndexPath) -> Int
 }
@@ -32,6 +35,7 @@ final class BoardViewModel: BoardViewModelProtocol {
     var selectionNumberArray: [Int] = [Int](1...80)
     var selectedNumber: Int = 1
     var selectedNumbers: [Int] = []
+    var oddsArray = Constants.oddsArray
     
     // MARK: - Init
     
@@ -55,6 +59,14 @@ final class BoardViewModel: BoardViewModelProtocol {
     
     func getSelectionNumberFor(indexPath: IndexPath) -> Int {
         return selectionNumberArray[indexPath.row]
+    }
+    
+    func getOddsCount() -> Int {
+        return oddsArray.count
+    }
+    
+    func getOddFor(indexPath: IndexPath) -> String {
+        return "\(oddsArray[indexPath.row])"
     }
     
     // MARK: - Web Services

@@ -28,9 +28,9 @@
                             <constraint firstAttribute="height" constant="1" id="trl-v3-YZa"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfN-iX-nNW">
-                        <rect key="frame" x="18" y="46" width="39" height="18"/>
-                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfN-iX-nNW">
+                        <rect key="frame" x="5" y="46" width="65" height="12.5"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -45,10 +45,12 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="odk-RR-kmN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3g1-Uw-1Vl"/>
+                <constraint firstItem="KfN-iX-nNW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="4HZ-9y-LG5"/>
                 <constraint firstItem="odk-RR-kmN" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="4Q0-92-E0C"/>
                 <constraint firstItem="odk-RR-kmN" firstAttribute="top" secondItem="rIj-7n-NPX" secondAttribute="bottom" constant="10" id="FwC-AL-fen"/>
                 <constraint firstItem="rIj-7n-NPX" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="GOT-AP-UTr"/>
                 <constraint firstItem="KfN-iX-nNW" firstAttribute="top" secondItem="odk-RR-kmN" secondAttribute="bottom" constant="10" id="R4A-ny-Dab"/>
+                <constraint firstAttribute="trailing" secondItem="KfN-iX-nNW" secondAttribute="trailing" constant="5" id="XjT-pH-Kxr"/>
                 <constraint firstItem="KfN-iX-nNW" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kyf-If-02o"/>
                 <constraint firstAttribute="trailing" secondItem="odk-RR-kmN" secondAttribute="trailing" id="veJ-60-hRF"/>
             </constraints>
