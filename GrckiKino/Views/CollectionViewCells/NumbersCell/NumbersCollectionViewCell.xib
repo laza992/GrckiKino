@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NumbersCollectionViewCell" customModule="GrckiKino" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QQ-GG-2a3">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5b-cs-7Uv">
+                                <rect key="frame" x="2" y="2" width="46" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anI-bR-H4D">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" red="0.36470848319999999" green="0.3647010624" blue="0.36470609900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="anI-bR-H4D" firstAttribute="leading" secondItem="J5b-cs-7Uv" secondAttribute="leading" id="9AF-Nd-VUN"/>
+                                    <constraint firstItem="anI-bR-H4D" firstAttribute="top" secondItem="J5b-cs-7Uv" secondAttribute="top" id="Rx7-t2-IyU"/>
+                                    <constraint firstAttribute="bottom" secondItem="anI-bR-H4D" secondAttribute="bottom" id="Tqi-Ep-ELX"/>
+                                    <constraint firstAttribute="trailing" secondItem="anI-bR-H4D" secondAttribute="trailing" id="Xt1-JQ-02p"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="J5b-cs-7Uv" secondAttribute="bottom" constant="2" id="OyD-K0-KEl"/>
+                            <constraint firstAttribute="trailing" secondItem="J5b-cs-7Uv" secondAttribute="trailing" constant="2" id="QVl-xs-kSh"/>
+                            <constraint firstItem="J5b-cs-7Uv" firstAttribute="leading" secondItem="6QQ-GG-2a3" secondAttribute="leading" constant="2" id="SgZ-f4-2RC"/>
+                            <constraint firstItem="J5b-cs-7Uv" firstAttribute="top" secondItem="6QQ-GG-2a3" secondAttribute="top" constant="2" id="x4y-Ga-Sei"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="6QQ-GG-2a3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gZJ-H9-pka"/>
+                <constraint firstItem="6QQ-GG-2a3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pOt-mQ-ZMo"/>
+                <constraint firstAttribute="bottom" secondItem="6QQ-GG-2a3" secondAttribute="bottom" id="rqz-ej-KHU"/>
+                <constraint firstAttribute="trailing" secondItem="6QQ-GG-2a3" secondAttribute="trailing" id="xyu-L0-Ua6"/>
+            </constraints>
+            <connections>
+                <outlet property="customView" destination="6QQ-GG-2a3" id="f87-BP-gq1"/>
+                <outlet property="numberLabel" destination="anI-bR-H4D" id="Pwa-vv-7J9"/>
+                <outlet property="selectionView" destination="J5b-cs-7Uv" id="6i6-Vt-Hrq"/>
+            </connections>
+            <point key="canvasLocation" x="135" y="103"/>
+        </collectionViewCell>
+    </objects>
+</document>

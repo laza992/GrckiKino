@@ -1,0 +1,4 @@
+themeYelow: FDB818
+themeBlue: 260073
+lightBlue: BBD0ED
+lightGray: 94979A
