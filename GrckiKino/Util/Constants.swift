@@ -14,6 +14,13 @@ struct Constants {
         df.dateFormat = "yyyy-mm-dd"
         return df
     }()
+    static let fullDateFormatter: DateFormatter = {
+        let df = DateFormatter()
+        df.dateStyle = .medium
+        df.timeStyle = .short
+        df.dateFormat = "dd.MM H:mm"
+        return df
+    }()
     static let dayMonthFormatter: DateFormatter = {
         let df = DateFormatter()
         df.dateFormat = "dd.mm"
@@ -38,4 +45,71 @@ struct Constants {
     }
     static let oddsArray: [Int] = [20000,10000,7000,5000,2500,1500,1400,1200,1000,800,500,250,200,100,50]
     
+    static let json =
+        """
+        [
+        {
+        "gameId": 1100,
+        "drawId": 843705,
+        "drawTime": 1605045300000,
+        "drawBreak": 0,
+        "visualDraw": 843705,
+        "winningNumbers": {
+                        "list": [
+                            76,
+                            49,
+                            29,
+                            79,
+                            71,
+                            13,
+                            46,
+                            8,
+                            45,
+                            68,
+                            38,
+                            9,
+                            12,
+                            66,
+                            44,
+                            15,
+                            69,
+                            43,
+                            37,
+                            2
+                        ]
+        }
+        },
+        {
+        "gameId": 1100,
+        "drawId": 343705,
+        "drawTime": 1605075300000,
+        "drawBreak": 0,
+        "visualDraw": 443705,
+        "winningNumbers": {
+                        "list": [
+                            65,
+                            34,
+                            59,
+                            17,
+                            29,
+                            68,
+                            14,
+                            41,
+                            15,
+                            25,
+                            16,
+                            51,
+                            20,
+                            12,
+                            6,
+                            46,
+                            48,
+                            5,
+                            26,
+                            60
+        ],
+        }
+        }
+        ]
+        """
 }

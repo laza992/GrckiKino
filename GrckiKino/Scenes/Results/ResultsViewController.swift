@@ -22,7 +22,7 @@ class ResultsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        getResults()
+        getResultsAPI()
         customView.setup(delegate: self, dataSource: self)
     }
 }
@@ -31,7 +31,7 @@ class ResultsViewController: BaseViewController {
 
 extension ResultsViewController {
     
-    private func getResults() {
+    private func getResultsAPI() {
         showProgressHUD()
         
         viewModel.getResults {
@@ -57,7 +57,7 @@ extension ResultsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 370
     }
     
 }

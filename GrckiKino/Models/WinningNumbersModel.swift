@@ -11,20 +11,19 @@ struct WinningNumbers: Codable {
     
     // MARK: - Properties
     
-    var list : [Int]?
-    var bonus : [Int]?
+    var list: [Int]
     
     // MARK: - Enums
     
     enum CodingKeys: String, CodingKey {
         case list
-        case bonus
     }
+    
+    // MARK: - Init
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        list = try values.decodeIfPresent([Int].self, forKey: .list)
-        bonus = try values.decodeIfPresent([Int].self, forKey: .bonus)
+        list = try values.decode([Int].self, forKey: .list)
     }
 }
 

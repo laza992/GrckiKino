@@ -40,6 +40,7 @@
                                     <constraint firstItem="anI-bR-H4D" firstAttribute="top" secondItem="J5b-cs-7Uv" secondAttribute="top" id="Rx7-t2-IyU"/>
                                     <constraint firstAttribute="bottom" secondItem="anI-bR-H4D" secondAttribute="bottom" id="Tqi-Ep-ELX"/>
                                     <constraint firstAttribute="trailing" secondItem="anI-bR-H4D" secondAttribute="trailing" id="Xt1-JQ-02p"/>
+                                    <constraint firstAttribute="width" secondItem="J5b-cs-7Uv" secondAttribute="height" multiplier="1:1" id="zP5-PZ-ogQ"/>
                                 </constraints>
                             </view>
                         </subviews>

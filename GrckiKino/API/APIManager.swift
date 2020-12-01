@@ -59,11 +59,13 @@ class APIManager {
                 print("Error")
                 return
             }
-            print("Downloaded")
+            
+            let json = Constants.json.data(using: .utf8)
+            
             do {
                 let decoder = JSONDecoder()
-                let drawingModel = try decoder.decode([String: DrawingModel].self, from: data)
-                completion(drawingModel.compactMap({ $0.value }))
+                let drawingModel = try decoder.decode([DrawingModel].self, from: json!)
+                completion(drawingModel)
             } catch {
                 print("Download Error")
                 completion([])

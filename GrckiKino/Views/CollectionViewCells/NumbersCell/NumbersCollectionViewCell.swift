@@ -24,7 +24,10 @@ class NumbersCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        selectionView.layer.cornerRadius = 35
+        customView.layer.cornerRadius = 0
+        customView.layer.borderWidth = 1
+        customView.layer.borderColor = ColorName.lightGray.color.cgColor
+        selectionView.layer.cornerRadius = customView.frame.height / 2
     }
     
     override func prepareForReuse() {
@@ -50,6 +53,19 @@ class NumbersCollectionViewCell: UICollectionViewCell {
     
     func setupResultsCell(_ number: Int) {
         numberLabel.text = "\(number)"
-        customView.layer.cornerRadius = 35
+        customView.layer.cornerRadius = customView.frame.height / 2
+        if (1...20).contains(number) {
+            customView.layer.borderWidth = 2
+            customView.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        } else if (20...40).contains(number) {
+            customView.layer.borderWidth = 2
+            customView.layer.borderColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+        } else if (40...60).contains(number) {
+            customView.layer.borderWidth = 2
+            customView.layer.borderColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
+        } else if (60...80).contains(number) {
+            customView.layer.borderWidth = 2
+            customView.layer.borderColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        }
     }
 }

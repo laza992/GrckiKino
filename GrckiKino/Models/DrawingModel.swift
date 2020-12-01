@@ -14,20 +14,22 @@ class DrawingModel: Codable {
     var gameId: Int
     var drawId: Int
     var drawTime: Date
-    var status: String
     var drawBreak: Int
     var visualDraw: Int
     var winningNumbers: WinningNumbers?
+    
+    // MARK: - Enums
     
     enum CodingKeys: String, CodingKey {
         case gameId
         case drawId
         case drawTime
-        case status
         case drawBreak
         case visualDraw
         case winningNumbers
     }
+    
+    // MARK: - Init
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -36,7 +38,6 @@ class DrawingModel: Codable {
         drawId = try container.decode(Int.self, forKey: .drawId)
         let timeInterval = try container.decode(TimeInterval.self, forKey: .drawTime)
         drawTime = Date(timeIntervalSince1970: timeInterval)
-        status = try container.decode(String.self, forKey: .status)
         visualDraw = try container.decode(Int.self, forKey: .visualDraw)
         drawBreak = try container.decode(Int.self, forKey: .drawBreak)
         winningNumbers = try container.decodeIfPresent(WinningNumbers.self, forKey: .winningNumbers)
